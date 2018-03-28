@@ -1,0 +1,24 @@
+package kolekcje;
+
+import java.util.Map;
+
+public class HashMap {
+	
+	public static void main(String []args) {
+		java.util.HashMap<Integer,String> mapka=new java.util.HashMap<Integer,String>();
+		mapka.put(1, "jeden");
+		mapka.put(2, "jeden");
+		mapka.put(3, "jeden");
+		mapka.put(1, "dwa");
+		
+		String numer=mapka.get(1);
+		
+		for(Map.Entry<Integer, String> zmienna:mapka.entrySet()) {
+			int k=zmienna.getKey();
+			String v=zmienna.getValue();
+			
+			System.out.println("klucz "+k+"       "+"wartosc "+v);
+		}
+		}
+
+}
